@@ -2,7 +2,7 @@
  <html lang="pt-br">
  <head>
     <meta charset="UTF-8">
-    <meta name="google-site-verification" content="UKE4eJHNxEnjOtCYpOrUJy3LrF11YzXsyznrbw2qUvs" />
+    <meta name="google-site-verification" content="Portifolio feito como propaganda para uma plataforma de cursos de NR e preparatorios" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>portifolio</title>
@@ -290,37 +290,6 @@ REPRESENTAÇÃO DA EMPRESA CONTINENTAL DO PERU</strong></h2>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script>
-    (function(){
-        emailjs.init("Iuw1iomt_T3OeDcu8"); // Substitua pelo seu User ID do EmailJS
-    })();
-
-    document.getElementById("inscricaoForm").addEventListener("submit", function(event) {
-        event.preventDefault();
-
-        let nome = document.getElementById("nome").value;
-        let email = document.getElementById("email").value;
-        let estado = document.getElementById("estado").value;
-        let numero = document.getElementById("numero").value;
-        let curso = document.getElementById("curso").value;
-
-        let templateParams = {
-            nome: nome,
-            email: email,
-            estado: estado,
-            numero: numero,
-            curso: curso
-        };
-
-        emailjs.send("service_vzfzpaf", "template_nly5nfr", templateParams)
-            .then(function(response) {
-                alert("Ficha enviada com sucesso!\n\n📋 Detalhes:\nNome: " + nome + "\nE-mail: " + email + "\nEstado: " + estado + "\nNúmero: " + numero + "\nCurso: " + curso);
-                document.getElementById("inscricaoForm").reset();
-            }, function(error) {
-                alert("Erro ao enviar. Tente novamente.");
-            });
-    });
-</script>
 
  </body>
  </html>
